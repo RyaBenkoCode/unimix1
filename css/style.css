@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.small-capitals {
+  font-variant: small-caps;
+}
+
+.center {
+  text-align: center;
+  /* text-align: justify; */
+}
