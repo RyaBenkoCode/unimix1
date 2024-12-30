@@ -22,6 +22,28 @@ body {
   padding: 0;
 }
 
+.main-window {
+  margin: 30px;
+  background-color: #ccc;
+  width: 150px;
+  height: 150px;
+}
+
+#popup {
+  margin-left: 10px;
+  max-width: 100px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+
+#myButton {
+  color: red;
+  background-color: rgb(46, 71, 162);
+}
+
 .small-capitals {
   font-variant: small-caps;
 }
