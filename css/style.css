@@ -80,6 +80,9 @@ body {
 
 /* интро */
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   background-image: url(../img/1.webp);
@@ -87,6 +90,41 @@ body {
   background-position: center;
   background-size: cover;
   opacity: 0.5;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.intro__title {
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.intro__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 30px auto;
+
+  background-color: #fff;
+}
+
+.intro__suptitle {
+  font-family: "Great Vibes", serif;
+  font-size: 72px;
+  /* text-align: center; */
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 /* контейнер */
@@ -119,7 +157,12 @@ body {
 .header__logo {
   font-size: 30px;
   font-weight: 700;
+  /* color: #333; */
+}
+
+.header__link {
   color: #333;
+  text-decoration: none;
 }
 
 /* навигация */
@@ -166,4 +209,23 @@ body {
 .nav__link:hover::after {
   display: block;
   opacity: 1;
+}
+
+/* кнопка */
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+
+  border: 2px solid #fff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
 }
