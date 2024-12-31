@@ -127,6 +127,11 @@ body {
   color: #fff;
 }
 
+/* анимация */
+.intro__span {
+  /* animation: intro__span 1.5s infinite alternate; */
+}
+
 /* контейнер */
 .container {
   width: 100%;
@@ -157,12 +162,13 @@ body {
 .header__logo {
   font-size: 30px;
   font-weight: 700;
-  /* color: #333; */
 }
 
 .header__link {
   color: #333;
   text-decoration: none;
+
+  /* animation: header__link 1.5s infinite alternate; */
 }
 
 /* навигация */
@@ -228,4 +234,67 @@ body {
 .btn:hover {
   background-color: #fff;
   color: #333;
+}
+
+/* слайдер */
+.slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.slider__item {
+  position: relative;
+  width: 23%;
+  padding: 10px 0;
+  border-top: 3px solid #fff;
+
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.slider__item .active {
+  opacity: 1;
+}
+
+.slider__item.active::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: red;
+
+  position: absolute;
+  top: -3;
+  left: 0;
+  z-index: 1;
+}
+
+.slider__num {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@keyframes header__link {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff,
+      0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff,
+      0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0;
+  }
+}
+
+@keyframes intro__span {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff,
+      0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff,
+      0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0;
+  }
 }
